@@ -1,10 +1,10 @@
 node('master') 
 {
-    stage('Continuous Download_master') 
+    stage('Continuous Download_test') 
 	{
     git 'https://github.com/koneti0021/Multi-Branch03.git'
 	}
-    stage('Continuous Build_master') 
+    stage('Continuous Build_test') 
 	{
     sh label: '', script: 'mvn package'
 	}
